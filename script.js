@@ -29,9 +29,10 @@ for (let i=0; i<images.length; i++) {
     let imgAlt = images[i].alt.toLowerCase();
     
     if (imgAlt.includes('horse')|| imgAlt.includes('pony')) {
+     document.body.style.backgroundImage = 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)'
      //if match replace obj/image src to our src unicorn
-    //  images[i].setAttribute("src", 'https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_1000x1000_$&$product=PartyCity/662678' )
-    let unicornIndex = Math.floor(Math.random()*10)
+     //  images[i].setAttribute("src", 'https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_1000x1000_$&$product=PartyCity/662678' )
+     let unicornIndex = Math.floor(Math.random()*10)
      images[i].src = unicorn[unicornIndex];
      images[i].srcset = unicorn[unicornIndex];
     }
