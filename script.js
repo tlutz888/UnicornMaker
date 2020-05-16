@@ -20,7 +20,7 @@ let images = document.getElementsByTagName('img');
 //     srcList.push(images[i].src);
 // }
 // set src method()
-console.log(images)
+// console.log(images)
 
 //loop over srcList(array of obj/images)
 for (let i=0; i<images.length; i++) {
